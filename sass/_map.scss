@@ -23,38 +23,55 @@
     }
 }
 
-.map__container-on-map3{
-    display: none;
-    @include media('<=j') {
-        display: block;
-    }
-}
-
-.map__container-on-map2{
-    display: none;
-    @include media('<=xss') {
-        display: block;
-    }
-    @include media('<=j') {
-        display: none;
-    }
-}
-
-.map__container-on-map1{
-    display: none;
+iframe{
+    width: 720px;
+    height: 900px;
+    filter: sepia(15%);
     @include media('<=xs') {
-        display: block;
+    width: 550px;
+    height: 800px;
     }
     @include media('<=xss') {
-        display: none;
+        width: 350px;
+        height: 600px;
+    }
+    @include media('<=j') {
+        width: 200px;
+        height: 400px;
     }
 }
+// .map__container-on-map3{
+//     display: none;
+//     @include media('<=j') {
+//         display: block;
+//     }
+// }
 
-.map__container-on-map{
-    @include media('<=xs') {
-        display: none;
-    }
-}
+// .map__container-on-map2{
+//     display: none;
+//     @include media('<=xss') {
+//         display: block;
+//     }
+//     @include media('<=j') {
+//         display: none;
+//     }
+// }
+
+// .map__container-on-map1{
+//     display: none;
+//     @include media('<=xs') {
+//         display: block;
+//     }
+//     @include media('<=xss') {
+//         display: none;
+//     }
+// }
+
+// .map__container-on-map{
+//     @include media('<=xs') {
+//         display: none;
+//     }
+// }
 
 
 
