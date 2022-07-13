@@ -21,7 +21,6 @@
 
 .worker__text-container{
     margin: 30px 40px;
-    width: 317px;
     @include media('<=xl') {
         width: 200px;
         margin: 30px auto;
