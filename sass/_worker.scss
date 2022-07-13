@@ -1,0 +1,58 @@
+.worker{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px 0px;
+    font-family: $font-metropolis;
+    max-width: 1440px;
+    margin: auto;
+    @include media('<=xs') {
+        display: block;
+    }
+}
+
+.worker__div-container{
+    text-align: center;
+    padding: 60px 0px;
+    @include media('<=xs') {
+        border-bottom: 1px solid $secondary-orange;
+        border-top: 1px solid $secondary-orange;
+    }
+}
+
+.worker__text-container{
+    margin: 30px 40px;
+    width: 317px;
+    @include media('<=xl') {
+        width: 200px;
+        margin: 30px auto;
+    }
+}
+
+.worker__text-elements-header{
+    color: $secondary-orange;
+    font-weight: $font-weight700;
+}
+
+.worker__text-elements-text{
+    margin-top: 20px;
+    line-height: 24px;
+    font-weight: $font-weight400;
+    color: #333333;
+}
+
+.worker__text-elements-email{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.worker__text-elements-number{
+    letter-spacing: 2px;
+    color: #333333;
+}
+
+.worker__image{
+    @include media('<=xl') {
+        width: 200px;
+    }
+}

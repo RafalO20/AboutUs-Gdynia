@@ -1,0 +1,135 @@
+.footer{
+    position: relative;
+    background: url("../images/Footer-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    color: #fff;
+    max-width: 1440px;
+    height: 640px;
+    margin: auto;
+    overflow: hidden;
+    font-family: $font-metropolis;
+}
+.footer__background{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.footer__main-container{
+    position: absolute;
+    z-index: 9;
+    height: 40vh;
+    width: 100%;
+}
+.footer__main-container-right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 60%;
+    top: 15%;
+    @include media('<=l') {
+        left: 55%;
+    }
+    @include media('<=m') {
+        left: 0%;
+    }
+}
+.footer__main-container-left{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 35%;
+    left: 10%;
+    @include media('<=xl') {
+        left: 5%;
+    }
+}   
+.footer__adres{
+    font-weight: $font-weight600;
+    font-size: 19px;
+    padding-top: 150px;
+    line-height: 50px;
+    @include media('<=m') {
+        position: absolute;
+        top: 5%;
+    }
+    @include media('<=j') {
+        font-size: 0.7rem;
+        top: -15%;
+    }
+}
+
+.footer__logo-gdynia-main{
+    @include media('<=m') {
+        position: absolute;
+        top: -15%;
+    }
+}
+
+.footer__elements-privacy{
+    font-weight: 500px;
+    font-size: 12px;
+    padding-top: 50px ;
+    @include media('<=m') {
+        position: absolute;
+        top: 120%;
+    }
+    @include media('<=j') {
+        font-size: 0.5rem;
+    }
+}
+.footer__elements-privacy-span{
+    display: block;
+    margin-right: 50px ;
+}
+
+.footer__span-city-p{
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    @include media('<=j') {
+        font-size: 1rem;
+    }
+}
+.footer__span-city-po{
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: $secondary-orange;
+    @include media('<=j') {
+        font-size: 1rem;
+    }
+}
+.footer__span-city{
+    font-weight: 700;
+}
+.footer__span-business{
+    font-weight: 700;
+}
+.footer__http{
+    letter-spacing: 4px;
+    font-weight: 200;
+    @include media('<=j') {
+        font-size: 0.5rem;
+    }
+}
+.footer__partners{
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 4px;
+    @include media('<=m') {
+        position: absolute;
+        top: 20%;
+    }
+    @include media('<=j') {
+        top: 0%;
+        font-size: 0.5rem;
+    }
+
+}
+.footer__span-area{
+    margin-left: 20px;
+    background-color: $secondary-orange;
+}

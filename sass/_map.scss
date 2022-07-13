@@ -1,0 +1,77 @@
+.map{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $neutral-bgc;
+    max-width: 1440px;
+    margin: auto;
+    @include media('<=m') {
+        display: block;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+}
+
+.map__container-on-elements{
+    margin-top: 120px;
+    margin-left: 40px;
+    font-family: $font-metropolis;
+    color: $primary-blue;
+    line-height: 32px;
+    @include media('<=m') {
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+}
+
+.map__container-on-map3{
+    display: none;
+    @include media('<=j') {
+        display: block;
+    }
+}
+
+.map__container-on-map2{
+    display: none;
+    @include media('<=xss') {
+        display: block;
+    }
+    @include media('<=j') {
+        display: none;
+    }
+}
+
+.map__container-on-map1{
+    display: none;
+    @include media('<=xs') {
+        display: block;
+    }
+    @include media('<=xss') {
+        display: none;
+    }
+}
+
+.map__container-on-map{
+    @include media('<=xs') {
+        display: none;
+    }
+}
+
+
+
+.map__p-contact{
+    font-size: $font-size32;
+    font-weight: $font-weight400;
+    margin-bottom: 80px;
+}
+
+.map__p-invest{
+    display: block;
+    font-size: 19px;
+    font-weight: $font-weight700;
+    color: #333333;
+}
+
+.map__p-element{
+    color: #333333;
+    font-weight: $font-weight400;
+}

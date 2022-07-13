@@ -1,0 +1,25 @@
+.button{
+    color: $secondary-orange;
+    border: 1px solid $secondary-orange;
+    background: transparent;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: $font-size14;
+    font-weight: $font-weight600;
+    font-family: $font-metropolis;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color: $secondary-orange;
+        transition: 0.2s;
+    }
+    @include media('<=s') {
+        margin-top: 250px;
+        padding: 25px 150px;
+    }
+
+    @include media('<=j') {
+        margin-top: 250px;
+        padding: 15px 50px;
+    }
+}

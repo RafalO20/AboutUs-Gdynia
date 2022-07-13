@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+    padding: 20px 30px;
+    overflow: hidden;
+    @include media('<=s') {
+        margin-top: 80px;
+    }
+}
+
+.navigation__logo{
+    cursor: pointer;
+}
+
+.navigation__frame{
+    cursor: pointer;
+    @include media('<=xl') {
+        display: none;
+    }
+}
+
+.navigation__list{
+    list-style: none;
+    @include media('<=s') {
+            display: none;
+            width: 100%;
+            height: 80vh;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 60px;
+            line-height: 80px;
+    }
+}
+
+
+
+.navigation__list.show{
+    display: flex;
+}
+
+.navigation__list-elements{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.navigation__element{
+    text-decoration: none;
+    color: $primary-blue;
+    font-size: $font-size14;
+    font-weight: $font-weight600;
+    font-family: $font-metropolis;
+    &:hover{
+        text-decoration-line: overline;
+        color: $secondary-orange;
+        transition: 0.2s;
+    }
+    @include media('<=s') {
+        font-size: 20px;
+    }
+}
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+    @include media('<=s') {
+        display: block;
+    }
+}
