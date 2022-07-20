@@ -1,0 +1,94 @@
+.foursection
+    max-width: 1440px
+    margin: auto
+    &__container
+        display: flex
+        padding: 100px 0px
+        max-width: 1000px
+        margin: auto
+        @include media('<=xxl') 
+            margin: auto
+            max-width: 900px
+        @include media('<=x')
+            padding: 100px 20px
+        @include media('<=m')
+            display: block 
+    &__title
+        font-size: $font-size32
+        color: $primary-blue
+        line-height: 40px
+        width: 500px
+        margin-right: 150px
+        @include media('<=x') 
+            margin-right: 20px
+        @include media('<=m') 
+            padding-right: 5px
+            width: 100%
+            padding-bottom: 50px
+            font-size: 24px
+    &__text
+        font-size: 20px
+        color: $gray-text
+        line-height: 32px
+        width: 410px
+        text-align: justify
+        @include media('<=m') 
+            width: 100%
+            font-size: 14px
+    &__elements
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        margin: auto
+        padding-bottom: 80px
+        
+    &__element
+        display: flex
+        margin: auto
+        padding-top: 30px
+    &__box-color
+        width: 24px
+        height: 24px
+        background-color: $secondary-orange
+        border-radius: 5px 
+        margin-right: 20px 
+    &__container-images
+        display: flex
+        @include media('<=ms') 
+            display: grid
+            margin: auto
+    // &__image
+    //     padding-top: 143px
+    //     width: 433px
+    //     @include media('<=xxl') 
+    //         // width: 300px
+    //         width: 100%
+    //     @include media('<=x') 
+    //         // width: 300px
+    //     @include media('<=mx') 
+    //         // width: 250px
+    //     @include media('<=m') 
+    //         // width: 150px
+    // &__image--main
+    //     width: 100%
+    //     padding-left: 10px 
+    //     padding-right: 10px 
+    //     @include media('<=xxl') 
+    //         // width: 416px
+    //     @include media('<=x') 
+    //         // width: 316px
+    //         // padding-top: 103px
+    //     @include media('<=mx') 
+    //         // width: 276px
+    //         // padding-top: 96px
+    //     @include media('<=m') 
+    //         // width: 180px
+    //         // padding-top: 100px
+    &__image-one
+        max-width: 1440px
+        margin: auto
+    &__image-one-two
+        width: 100%
+
+
+    

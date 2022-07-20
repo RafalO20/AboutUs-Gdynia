@@ -1,0 +1,121 @@
+.footer
+    position: relative
+    background: url("../images/Footer-background.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover 
+    color: #fff
+    max-width: 1440px
+    height: 640px
+    margin: auto
+    overflow: hidden
+    font-family: $font-metropolis
+
+    &__background
+        position: absolute
+        z-index: 1
+        width: 100%
+    
+    &__main-container
+        position: absolute
+        z-index: 9
+        height: 40vh
+        width: 100%
+
+    &__main-container-right
+        position: absolute
+        height: 100%
+        width: 100%
+        left: 60%
+        top: 15%
+        @include media('<=l')
+            left: 55%
+        @include media('<=mx')
+            left: 0%
+
+    &__main-container-left
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 35%
+        left: 10%
+        @include media('<=xl')
+            left: 5%
+
+    &__adres
+        font-weight: $font-weight600
+        font-size: 19px
+        padding-top: 150px
+        line-height: 50px
+        @include media('<=mx') 
+            position: absolute
+            top: 5%
+        @include media('<=s') 
+            font-size: 0.7rem
+            top: -5%
+
+    &__logo-gdynia-main
+        @include media('<=mx') 
+            position: absolute
+            top: -15%
+    
+    &__elements-privacy
+        font-weight: 500px
+        font-size: 12px
+        padding-top: 50px
+        @include media('<=mx')
+            position: absolute
+            top: 80%
+        @include media('<=s') 
+            font-size: 0.5rem
+    
+    &__elements-privacy-span
+        display: block
+        margin-right: 50px 
+    
+    
+    &__text-city-one
+        font-size: 40px
+        font-weight: 200
+        text-transform: uppercase
+        @include media('<=s') 
+            font-size: 1rem     
+
+    &__text-city-two
+        font-size: 40px
+        font-weight: 200
+        text-transform: uppercase
+        color: $secondary-orange
+        @include media('<=s') 
+            font-size: 1rem
+
+    &__city-style
+        font-weight: 700
+    
+    &__business-style
+        font-weight: 700
+    
+    &__http
+        letter-spacing: 4px
+        font-weight: 200
+        @include media('<=s') 
+            font-size: 0.5rem
+
+    &__partners
+        margin-top: 200px
+        text-transform: uppercase
+        font-weight: 200
+        letter-spacing: 4px
+        @include media('<=mx') 
+            position: absolute
+            top: 10%
+        @include media('<=s') 
+            top: 0%
+            font-size: 0.5rem
+    
+    &__box
+        margin-left: 20px
+        background-color: $secondary-orange
+    
+
+

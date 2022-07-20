@@ -1,0 +1,41 @@
+.onesection
+    max-width: 976px
+    margin: 120px auto
+    &__container-two
+        max-width: 976px
+        margin-bottom: 200px 
+        @include media('<=ms') 
+        margin-bottom: 100px
+    &__image
+        width: 100%
+    &__container-one
+        max-width: 876px
+        margin: auto
+        padding-bottom: 80px
+        @include media('<=x') 
+            padding-left: 20px
+            padding-right: 20px
+    &__title
+        font-size: $font-size28
+        margin-bottom: 80px
+        color: $primary-blue
+        font-weight: $font-weight400
+        @include media('<=x') 
+            line-height: 40px
+        @include media('<=ms') 
+            font-size: 24px
+            margin-bottom: 40px
+    &__small-text
+        font-size: $font-size16
+        line-height: 40px
+        color: $gray-text
+        font-weight: $font-weight400
+        text-align: justify
+        @include media('<=ms')
+            font-size: 14px
+            line-height: 32px
+    &__text-image
+        text-size: 12px
+        color: $primary-soft-blue
+        margin-top: 10px
+        margin-left: 5px
