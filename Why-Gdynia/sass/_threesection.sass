@@ -2,8 +2,7 @@
     max-width: 1440px
     margin: auto
     &__container-all-elements
-    max-width: 1150px
-        
+    max-width: 1150px   
     &__container
         display: flex
         justify-content: space-between
@@ -27,16 +26,16 @@
         font-size: $font-size32
         @include media('<=m') 
             padding-bottom: 50px
-            font-size: 24px
+            font-size: $font-size24
     &__text
-        font-size: 20px
+        font-size: $font-size20
         color: $gray-text
         line-height: 32px
         text-align: justify
         width: 410px
         @include media('<=m') 
             width: 100%
-            font-size: 14px
+            font-size: $font-size14
     &__text-element
         padding-bottom: 80px
         @include media('<=m') 
@@ -57,7 +56,7 @@
     &__element
         display: flex
         color: #182B49
-        font-size: 16px
+        font-size: $font-size16
         @include media('<=m')
             margin-bottom: 20px
             margin-left: 20px
@@ -68,7 +67,7 @@
         border-radius: 5px 
         margin-right: 20px
     &__box-text
-        font-size: 16px
+        font-size: $font-size16
         font-weight: $font-weight700
         padding-top: 4px
 
