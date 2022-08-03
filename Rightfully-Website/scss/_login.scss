@@ -1,0 +1,71 @@
+.login{
+    margin: auto;
+    &__logo{
+        background-color: $primary-color;
+        text-align: center;
+        height: 180px;
+        line-height: 200px;
+    }
+    &__main-container{
+        max-width: 600px;
+        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &__main-text{
+        font-size: 50px;
+        font-weight: $font-weight800;
+        text-align: center;
+        margin-top: 100px;
+        @include media('<=screen575'){
+            font-size: $font-size30;
+        }
+    }
+    &__small-text{
+        text-align: center;
+        font-size: 27px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 800;
+        @include media('<=screen575'){
+            font-size: $font-size23;
+        }
+    }
+    &__username{
+        width: 100%;
+        border: 4px solid black;
+        padding: 15px;
+    }
+    &__password{
+        width: 100%;
+        margin-top: 10px;
+        border: 4px solid black;
+        padding: 15px;
+    }
+    &__forgot{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        @include media('<=screen315'){
+            font-size: $font-size14;
+        }
+    }
+    &__register{
+        text-align: center;
+        margin-top: 15px;
+        @include media('<=screen315'){
+            font-size: $font-size14;
+        }
+    }
+    &__line{
+        width: 80%;
+        height: 4px;
+        background-color: $primary-color;
+        margin: auto;
+    }
+    &__link{
+        color: $primary-color;
+        text-decoration: underline $primary-color;
+        cursor: pointer;
+    }
+}
