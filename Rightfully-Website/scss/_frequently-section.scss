@@ -1,0 +1,129 @@
+.frequentyl-section{
+    max-width: 1440px;
+    margin: auto;
+    &__main-text{
+        text-align: center;
+        font-size: $font-size50;
+        font-weight: $font-weight800;
+        max-width: 600px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        @include media('<=screen850'){
+            font-size: $font-size30;
+        }
+        @include media('<=screen475'){
+            font-size: $font-size23;
+        }
+        @include media('<=screen400'){
+            font-size: $font-size18;
+        }
+    }
+    &__main-text-small{
+        max-width: 600px;
+        margin: auto;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    &__container-main{
+        display: flex;
+        @include media('<=screen650'){
+            display: block;
+        }
+    }
+    &__container-elements{
+        margin-left: auto;
+        &--two{
+            margin-right: auto;
+        }
+    }
+    &__label{
+        font-size: $font-size16;
+        font-weight: $font-weight900;
+    }
+    
+        &__box{
+        max-width: 700px;
+        border: 4px solid black;
+        background-color: $primary-color;
+        font-size: $font-size16;
+        font-weight: $font-weight400;
+        text-align: left;
+    }
+    
+    &__container &__box{
+        position: relative;
+        margin: 10px 20px;
+    }
+    
+    &__container &__box &__label{
+        position: relative;
+        padding: 20px;
+        background: $primary-color;
+        color: $secondary-color;
+        cursor: pointer;
+    }
+    
+    &__container &__box &__label::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: $font-size27;
+        font-weight: $font-weight700;
+    }
+    &__container &__box.active &__label::before{
+        content: 'x';
+    }
+    &__container &__box &__content{
+        position: relative;
+        background-color: #fff;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    
+    &__container &__box.active &__content{
+        height: 250px;
+        padding: 30px;
+    }
+
+    &__small-text{
+        padding-top: 50px;
+        text-align: center;
+        font-size: $font-size18;
+        font-weight: $font-weight800;
+    }
+}
+
+.container-on-two-section{
+    display: flex;
+    flex-direction: column;
+    @include media('<=screen1150'){
+        flex-direction: column-reverse;
+    }
+}
+
+.line-frequentyl{
+    height: 4px;
+    max-width: 1400px;
+    background-color: black;
+    margin: 100px auto;
+    @include media('<=screen1150'){
+        display: none;
+    }
+}
+
+.line-frequentyl-two{
+    display: none;
+    height: 4px;
+    max-width: 1400px;
+    background-color: black;
+    margin: 100px auto;
+    @include media('<=screen1150'){
+        display: block;
+    }
+}

@@ -1,0 +1,57 @@
+.hi-section{
+    max-width: $max-width1440;
+    margin: auto;
+    &__first-container{
+        display: flex;
+        margin: 0px 30px;
+        @include media('<=screen950'){
+            display: block;
+        }
+        @include media('<=screen300'){
+            margin: 0px 10px;
+        }
+        
+    }
+    &__main-text{
+        padding-right: 300px;
+        @include media('<=screen950'){
+            padding-right: 500px;
+            padding-bottom: 20px;
+        }
+        @include media('<=screen850'){
+            padding-right: 350px;
+        }
+        @include media('<=screen650'){
+            padding-right: 150px;
+        }
+        @include media('<=screen475'){
+            padding-right: 0px;
+        }
+    }
+    &__main-text-element{
+        font-size: $font-size50;
+        font-weight: $font-weight800;
+        @include media('<=screen300'){
+            font-size: $font-size27;
+        }
+    }
+    &__small-text-element{
+        font-size: $font-size16;
+        font-weight: $font-weight400;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+    &__element{
+        font-weight: $font-weight800;
+        font-size: $font-size23;
+        @include media('<=screen400'){
+            font-size: $font-size16;
+        }
+    }
+    &__line{
+        height: 4px;
+        max-width: 1440px;
+        background-color: black;
+        margin: 180px auto;
+    }
+}
