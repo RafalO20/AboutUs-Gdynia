@@ -8,6 +8,7 @@
         width: 125px;
         text-transform: uppercase;
         transition: 0.2s;
+        cursor: pointer;
         &:hover{
             background-color: transparent;
         }
@@ -37,6 +38,7 @@
         width: 125px;
         text-transform: uppercase;
         transition: 0.2s;
+        cursor: pointer;
         &--log{
             width: 100%;
             margin-top: 10px;
@@ -286,18 +288,5 @@
     }
     &__price-container{
         text-align: center;
-    }
-    &__singup{
-        font-size: $font-size18;
-        font-weight: $font-weight700;
-        background-color: white;
-        border: 4px solid $primary-color;
-        padding: 5px 10px;
-        width: 50%;
-        text-transform: uppercase;
-        transition: 0.2s;
-        &:hover{
-            background-color: $primary-color;
-        }
     }
 }

@@ -132,6 +132,7 @@
   text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .button__signup:hover {
@@ -167,6 +168,7 @@
   text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .button__login--log {
@@ -496,22 +498,6 @@
 
 .button__price-container {
   text-align: center;
-}
-
-.button__singup {
-  font-size: 18px;
-  font-weight: 700;
-  background-color: white;
-  border: 4px solid #FFC700;
-  padding: 5px 10px;
-  width: 50%;
-  text-transform: uppercase;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.button__singup:hover {
-  background-color: #FFC700;
 }
 
 .header {
@@ -1843,12 +1829,30 @@
 .signup__container {
   max-width: 1440px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 
 .signup__span {
   text-decoration: underline;
   color: #FFC700;
+}
+
+.signup__button {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #FFC700;
+  border: 4px solid #000000;
+  margin-top: 40px;
+  padding: 5px 10px;
+  width: 50%;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.signup__button:hover {
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
