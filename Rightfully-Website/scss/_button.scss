@@ -259,7 +259,11 @@
             right: -1%;
         }
         @include media('<=screen400'){
-            height: 80px;
+            left: -1.2%;
+            right: -1.2%;
+            top: 100%;
+            max-width: 340px;
+            font-size: $font-size14;
         }
         &:hover{
             background-color: white;

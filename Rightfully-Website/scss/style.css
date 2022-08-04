@@ -461,7 +461,11 @@
 
 @media (max-width: 400px) {
   .button__lets {
-    height: 80px;
+    left: -1.2%;
+    right: -1.2%;
+    top: 100%;
+    max-width: 340px;
+    font-size: 14px;
   }
 }
 
@@ -1073,6 +1077,7 @@
 
 .portal__slider-buttons {
   max-height: 300px;
+  max-width: 150px;
 }
 
 .portal__slider-buttons--two {
