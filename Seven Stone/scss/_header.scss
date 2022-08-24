@@ -1,0 +1,86 @@
+.header{
+    max-width: $max-width1440;
+    margin: auto;
+    position: relative;
+    font-family: 'Mont', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    &__main-container{
+        display: flex;
+    }
+    &__image{
+        position: absolute;
+        right: 0%;
+        height: 100%;
+        z-index: 1;
+        margin-right: 30px;
+    }
+    &__table-one{
+        @include media('<=screen1075') {
+            display: none;
+        }
+    }
+    &__table-two{
+        margin-left: 10px;
+        @include media('<=screen1075') {
+            display: none;
+        }
+    }
+    &__text-big{
+        position: relative;
+        font-size: $font-size120;
+        font-weight: $font-weight400;
+        max-width: 1000px;
+        color: $primary-color;
+        z-index: 10;
+        @include media('<=screen1075') {
+            font-size: 120px;
+            max-width: 750px;
+        }
+        @include media('<=screen650') {
+            font-size: 90px;
+        }
+        @include media('<=screen500') {
+            font-size: 80px;
+        }
+        @include media('<=screen475') {
+            font-size: 60px;
+        }
+        @include media('<=screen400') {
+            font-size: 50px;
+        }
+    }
+    &__text-small{
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        line-height: 26px;
+        font-size: $font-size18;
+        max-width: 100px;
+        color: $primary-color;
+        font-weight: $font-weight800;
+        z-index: 10;
+        @include media('<=screen1075') {
+            top: 100%;
+            left: 0%;
+        }
+    }
+}
+
+.line-container{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    &__line{
+        width: 100%;
+        margin-top: 120px;
+    }
+    &__line-two{
+        width: 100%;
+        margin-top: 120px;
+        @include media('<=screen1075') {
+            margin-top: 300px;
+            width: 100%;
+        }
+    }
+}

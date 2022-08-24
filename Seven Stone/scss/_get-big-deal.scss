@@ -1,0 +1,172 @@
+.get-big-deal{
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Mont', sans-serif;
+    color: $primary-color;
+    &__main-container{
+        display: flex;
+        margin-top: 100px;
+        @include media('<=screen1075') {
+            margin-top: 200px;
+            display: block;
+        }
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__secondary-container{
+        display: flex;
+        width: 100%;
+        @include media('<=screen475') {
+            display: block;
+        }
+    }
+    &__first-container{
+        display: flex;
+        max-width: 1440px;
+        @include media('<=screen1075') {
+            display: block;
+        }
+        @include media('<=screen475') {
+            display: block;
+        }
+    }
+    &__text-container{
+        margin-left: 100px;
+        @include media('<=screen1075') {
+            margin-left: 0px;
+        }
+    }
+    &__title-text{
+        font-size: 60px;
+        font-weight: $font-weight400;
+        
+    }
+    &__middle-text{
+        font-size: $font-size16;
+        font-weight: $font-weight400;
+    }
+    &__small-text{
+        font-size: $font-size16;
+        font-weight: $font-weight900;
+        margin-bottom: 100px;
+    }
+    &__image{
+        height: 135px;
+        @include media('<=screen1075') {
+            display: none;
+        }
+    }
+    &__image-container{
+        display: flex;
+        justify-content: space-around;
+        @include media('<=screen475') {
+            display: block;
+        }
+    }
+    &__image-container-logo{
+        @include media('<=screen1075') {
+            display: none;
+        }
+    }
+    &__image-container-one{
+        position: relative;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 260px;
+        width: 235px;
+        background-image: url("../images/Small-picture1.png");
+        background-repeat: no-repeat;
+        @include media('<=screen575') {
+            margin: auto;
+            margin-bottom: 100px;
+        }
+    }
+    &__image-container-two{
+        position: relative;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 260px;
+        width: 235px;
+        background-image: url("../images/Small-picture2.png");
+        background-repeat: no-repeat;
+    }
+    &__image-container-three{
+        position: relative;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 260px;
+        width: 235px;
+        background-image: url("../images/Small-picture3.png");
+        background-repeat: no-repeat;
+    }
+    &__image-container-four{
+        position: relative;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 260px;
+        width: 235px;
+        background-image: url("../images/Small-picture4.png");
+        background-repeat: no-repeat;
+    }
+    &__image-price{
+        font-weight: $font-weight900;
+        background-color: $secondary-color;
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+    }
+    &__image-text{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: $font-weight400;
+        color: $secondary-color;
+        background-color: $primary-color;
+        width: 195px;
+        height: 60px;
+        text-align: left;
+    }
+    &__image-text-container{
+        position: absolute;
+        bottom: -20%;
+    }
+    &__arrow-button-container{
+        text-align: center;
+    }
+    &__arrow{
+        width: 25%;
+        @include media('<=screen575') {
+            width: 20%;
+        }
+        @include media('<=screen350') {
+            display: none;
+        }
+    }
+    &__big-container-on-four-elements{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        @include media('<=screen1075') {
+            display: block;
+            justify-content: center;
+        }
+    }
+    &__big-container-on-two-elements{
+        display: flex;
+        @include media('<=screen1075') {
+            justify-content: center;
+        }
+        @include media('<=screen575') {
+            display: block;
+        }
+    }
+}

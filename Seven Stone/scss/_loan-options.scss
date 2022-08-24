@@ -1,0 +1,165 @@
+.loan-options{
+    position: relative;
+    max-width: $max-width1440;
+    margin: auto;
+    font-family: 'Mont', sans-serif;
+    &__image{
+        position: relative;
+        margin-top: 100px;
+        width: 100%;
+    }
+    &__image-element{
+        position: relative;
+        width: 100%;
+    }
+    &__header{
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        width: 40%;
+        height: 75%;
+        padding: 50px;
+        background-color: $secondary-color;
+        color: white;
+        font-size: 102px;
+        font-weight: 500;
+        @include media('<=screen1225') {
+            font-size: 80px;
+            padding: 35px;
+            // height: 70%;
+        }
+        @include media('<=screen950') {
+            font-size: 70px;
+        }
+        @include media('<=screen800') {
+            font-size: 60px;
+            // height: 65%;
+            padding: 30px;
+        }
+        @include media('<=screen650') {
+            font-size: 45px;
+            // height: 50%;
+            padding: 20px;
+        }
+        @include media('<=screen500') {
+            font-size: 35px;
+            // height: 30%;
+            padding: 15px;
+        }
+        @include media('<=screen400') {
+            font-size: 25px;
+            // height: 10%;
+            padding: 15px;
+        }
+    }
+    &__text-container{
+        margin-top: 100px;
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        @include media('<=screen1075') {
+            display: block;
+        }
+    }
+    &__big-text{
+        font-size: $font-size32;
+        color: $primary-color;
+        font-weight: $font-weight800;
+        &--one{
+            font-weight: $font-weight400;
+            font-size: 60px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+    &__small-text{
+        font-size: $font-size16;
+        color: $primary-color;
+        margin-left: 100px;
+        max-width: 800px;
+        @include media('<=screen1075') {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+    }
+    &__icon-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+    &__icons-container{
+        height: 100%;
+    }
+    &__icon-container-text{
+        color: $primary-color;
+        font-weight: $font-weight800;
+        padding-top: 8px;
+    }
+    &__form-element{
+        border: 2px solid $secondary-color;
+        color: $primary-color;
+        width: 48%;
+        height: 60px;
+        padding-left: 20px;
+        margin-top: 20px;
+        @include media('<=screen1375') {
+            width: 98%;
+        }
+        &--one{
+            width: 98%;
+            height: 120px;
+            @include media('<=screen1375') {
+                width: 98%;
+            }
+        }
+    }
+    &__form-container{
+        text-align: center;
+    }
+    &__icons-container-two{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 34px;
+    }
+    &__icons-right-container{
+        display: flex;
+        @include media('<=screen950') {
+            margin: auto;
+        }
+        @include media('<=screen475') {
+            display: block;
+        }
+        &--one{
+            display: flex;
+            @include media('<=screen1075') {
+                margin: auto;
+            }
+        }
+    }
+    &__icons-container-two-text{
+        color: $primary-color;
+        @include media('<=screen950') {
+            display: none;   
+        }
+        &--one{
+            color: $primary-color;
+            @include media('<=screen1075') {
+                display: none;
+            }
+        }
+    }
+    &__number-text{
+        margin-top: 20px;
+    }
+    &__container-on-icon{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

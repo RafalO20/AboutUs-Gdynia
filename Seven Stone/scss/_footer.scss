@@ -1,0 +1,85 @@
+.footer{
+    margin: auto;
+    margin-top: 150px;
+    padding: 50px 0px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: 'Mont';
+    @include media('<=screen650') {
+        display: none;
+    }
+    &__text-nav{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__text-nav-element{
+        padding: 15px;
+        text-decoration: none;
+        color: $secondary-color;
+        font-weight: $font-weight800;
+    }
+    &__join-text{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        max-width: 450px;
+    }
+    &__input{
+        height: 50px;
+        width: 400px;
+        border: none;
+        padding: 2px 0px 0px 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-one{
+    margin: auto;
+    margin-top: 150px;
+    padding: 50px 0px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: 'Mont';
+    display: none;
+    @include media('<=screen650') {
+        display: block;
+    }
+    &__main-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__number-text{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__join-text{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__input{
+        height: 50px;
+        width: 600px;
+        border: none;
+        padding: 2px 0px 0px 20px;
+        margin-bottom: 10px;
+        @include media('<=screen650') {
+            width: 450px;
+        }
+        @include media('<=screen575') {
+            width: 320px;
+        }
+        @include media('<=screen400') {
+            width: 250px;
+        }
+        @include media('<=screen315') {
+            width: 220px;
+        }
+    }
+    &__copyright-text{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,73 @@
+.button{
+    &__login{
+        font-size: $font-size18;
+        font-weight: $font-weight700;
+        background-color: $thirty-color;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        width: 125px;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-color: $primary-color;
+        }
+        &--modify{
+            width: auto;
+            padding: 10px 20px;
+        }
+    }
+    &__see{
+        background-color: white;
+        color: $primary-color;
+        padding: 5px 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 2px solid $primary-color;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+        }
+        @include media('<=screen575') {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    &__submit{
+        font-size: $font-size18;
+        font-weight: $font-weight700;
+        background-color: $thirty-color;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        width: 189px;
+        height: 60px;
+        transition: 0.2s;
+        margin-left: 20px;
+        cursor: pointer;
+        @include media('<=screen475') {
+            margin-left: 0px;
+        }
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+    &__signup{
+        font-size: $font-size18;
+        font-weight: $font-weight700;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: none;
+        padding: 10px 10px;
+        width: 180px;
+        height: 52px;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-color: $thirty-color;
+            color: $primary-color;
+        }
+    }
+}
