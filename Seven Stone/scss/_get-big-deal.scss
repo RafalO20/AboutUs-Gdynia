@@ -20,7 +20,7 @@
     &__secondary-container{
         display: flex;
         width: 100%;
-        @include media('<=screen475') {
+        @include media('<=screen575') {
             display: block;
         }
     }
@@ -53,6 +53,7 @@
         font-size: $font-size16;
         font-weight: $font-weight900;
         margin-bottom: 100px;
+        margin-top: 20px;
     }
     &__image{
         height: 135px;
@@ -63,7 +64,7 @@
     &__image-container{
         display: flex;
         justify-content: space-around;
-        @include media('<=screen475') {
+        @include media('<=screen575') {
             display: block;
         }
     }
